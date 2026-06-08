@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Code</title>
+</head>
+<body>
+    <h1>Enter Code</h1>
+    <input id="input" type="password" placeholder="Enter Code">
+    <br>
+    <button onclick="active()">OK</button>
+    <br>
+    <p id="p"></p>
+
+    <script>
+        function active() {
+        const password = document.getElementById("input");
+        if (password.value === "16471778065428817583") {
+            const pText = document.getElementById("p").innerText = "Correct";
+        } else {
+            const pText = document.getElementById("p").innerText = "Error";
+        }
+        }
+    </script>
+</body>
+</html>
